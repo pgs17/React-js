@@ -1,13 +1,98 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/*  here we target all the elements together*/
+*{ 
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+   font-family:Quicksand ;
+   color: #333;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navbar{
+  padding: 20px;
+  display:flex ;
+  align-items: center;
+  max-width: 600px;
+  margin: 0px auto;
+  border-bottom: 1px solid #f2f2f2;
+}
+.navbar h1 {
+  color: #f1356d;
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: #f1356d;
+}
+.content {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+}
+/* blog preview */
+.blogpreview{
+  padding: 10px 16px;
+margin: 10px 0px;
+border-bottom: 1px solid #fafafa;
+}
+.blogpreview:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.blogpreview h2{
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 8px;
+}
+.blogpreview a{
+text-decoration: none;
+}
+/* blog details */
+.blogdetails h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.blogdetails div {
+  margin: 20px 0;
+}
+.blogdetails button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+/* blog form */
+.create{
+  max-width: 400px;
+  text-align: center;
+  margin: 0px auto;
+}
+.create label {
+  display: block;
+  text-align: left; 
+}
+.create h2{
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #f1356d;
+}
+.create input,.create select,.create textarea{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0px;
+  display: block;
+  border: 1px solid #ddd;
+   box-sizing: border-box;
+}
+.create button{
+  background: #f1356d;
+  color: #ddd;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 8px;
 }
