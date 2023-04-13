@@ -4,7 +4,7 @@ const BlogDetails = () => {
     // wrapped the parameter we want 
     const {id} = useParams()
     // data : blogs is a variable  created while destructuring
-    const {data:blogs,error,isloading}= useFetch('http://localhost:8000/Blogs/'+id);
+    const {data:blogs,error,isloading}= useFetch(`http://localhost:8000/Blogs/${id}`);
     const history=useHistory()
 
     const Handleclick = () => {
